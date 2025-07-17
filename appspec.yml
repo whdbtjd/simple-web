@@ -21,13 +21,3 @@ permissions:                # 파일 및 디렉터리 권한 설정
     mode: 644                             # 파일 권한
     type:
       - file                              # 파일에만 적용
-
-hooks:                                    # 배포 라이프사이클 훅
-  BeforeInstall:                          # 설치 전 실행할 스크립트
-    - location: scripts/before_install.sh # 스크립트 경로
-      timeout: 300                        # 타임아웃(초)
-      runas: root                         # 실행 사용자
-  AfterInstall:                           # 설치 후 실행할 스크립트
-    - location: scripts/after_install.sh  # 스크립트 경로
-      timeout: 300                        # 타임아웃(초)
-      runas: root                         # 실행 사용자  
