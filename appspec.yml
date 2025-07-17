@@ -30,4 +30,4 @@ hooks:                                    # 배포 라이프사이클 훅
   AfterInstall:                           # 설치 후 실행할 스크립트
     - location: scripts/after_install.sh  # 스크립트 경로
       timeout: 300                        # 타임아웃(초)
-      runas: root                         # 실행 사용자
+      runas: root                         # 실행 사용자  
